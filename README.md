@@ -8,7 +8,7 @@ The notebook processes ovarian ultrasound images, extracts medically relevant fe
 
 The project demonstrates how computer vision and machine learning can assist in faster and more consistent medical image analysis.
 
-Problem Statement
+# Problem Statement
 
 PCOS is a hormonal disorder commonly diagnosed by observing multiple ovarian cysts in ultrasound scans. Manual diagnosis can:
 
@@ -21,7 +21,8 @@ This project automates part of the process by:
 Detecting cyst-like regions
 Extracting texture and shape features
 Training a classifier for PCOS prediction
-Dataset
+
+# Dataset
 
 The project uses ovarian ultrasound images categorized into:
 
@@ -34,7 +35,8 @@ Cyst count
 Texture patterns
 Area distribution
 Image contrast
-Workflow
+
+# Workflow
 Ultrasound Images
         ↓
 Image Preprocessing
@@ -48,7 +50,8 @@ Feature Extraction
 Machine Learning Classification
         ↓
 PCOS Prediction
-Features Extracted
+
+# Features Extracted
 
 The notebook extracts several important features from ultrasound images:
 
@@ -65,7 +68,8 @@ CLAHE contrast enhancement
 Binary thresholding
 Contour detection
 Noise filtering
-Machine Learning Model
+
+# Machine Learning Model
 
 The project uses:
 
@@ -82,7 +86,8 @@ Why Random Forest?
 Handles nonlinear patterns well
 Robust to noise
 Good performance on structured features
-Technologies Used
+
+# Technologies Used
 Python
 OpenCV
 NumPy
@@ -91,7 +96,8 @@ Matplotlib
 Seaborn
 Scikit-learn
 Scikit-image
-Project Structure
+
+# Project Structure
 .
 ├── ML_Project.ipynb
 ├── README.md
@@ -102,7 +108,8 @@ Project Structure
 │   └── test/
 ├── models/
 └── outputs/
-Installation
+
+# Installation
 1. Clone the Repository
 git clone https://github.com/your-username/pcos-ultrasound-detection.git
 cd pcos-ultrasound-detection
@@ -112,7 +119,9 @@ pip install -r requirements.txt
 Or manually install:
 
 pip install opencv-python numpy pandas matplotlib seaborn scikit-learn scikit-image
-Usage
+
+# Usage
+
 Run the Notebook
 jupyter notebook ML_Project.ipynb
 
@@ -123,7 +132,8 @@ Preprocess images
 Extract features
 Train the Random Forest model
 Evaluate prediction results
-Image Preprocessing
+
+# Image Preprocessing
 
 The project applies several preprocessing techniques:
 
@@ -146,7 +156,8 @@ Used to:
 
 Detect cyst boundaries
 Measure cyst-related features
-Data Visualization
+
+# Data Visualization
 
 The notebook includes:
 
@@ -157,7 +168,7 @@ Correlation visualization
 
 These help understand how extracted features differ between normal and PCOS images.
 
-Evaluation Metrics
+# Evaluation Metrics
 
 The model evaluation may include:
 
@@ -167,7 +178,8 @@ Recall
 F1-Score
 Confusion Matrix
 Classification Report
-Results
+
+# Results
 
 The system is designed to:
 
@@ -182,7 +194,8 @@ Final accuracy scores
 Confusion matrices
 Sample output images
 Performance graphs
-Future Improvements
+
+# Future Improvements
 
 Potential enhancements:
 
@@ -191,11 +204,10 @@ Real-time ultrasound analysis
 Segmentation-based cyst detection
 Deployment as a web application
 Multi-class ovarian condition classification
-References
+
+# References
 PCOS Ultrasound Imaging Research Papers
 OpenCV Documentation
 Scikit-learn Documentation
 Medical Image Processing Literature
-License
 
-This project is licensed under the MIT License.
